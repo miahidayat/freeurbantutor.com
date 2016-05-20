@@ -9,7 +9,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>Urban Tutors</title>
+    <link rel="icon" type="image/png" href="img/logo_header.png"/>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -33,43 +34,59 @@
 
 <body>
 
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav>
-        <ul>
-            <li>
-                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-            <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
-            <form action="/charge" method="POST">
-                <script
-                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                        data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
-                        data-image="/img/documentation/checkout/marketplace.png"
-                        data-name="Stripe.com"
-                        data-description="2 widgets"
-                        data-amount="2000"
-                        data-locale="auto"
-                        data-panel-label="Donate"
-                >
-                </script>
-            </form>
-        </ul>
-    </nav>
+    <header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Your Logo -->
+            <a href="#" class="navbar-brand">Free Urban Tutors <span class="lighter"></span></a>
+        </div>
+        <!-- Start Navigation -->
+        <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right lighter" role="navigation">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#getinvolved">Get involved!</a>
+                </li>
+                <li>
+                    <a href="#FAQ">FAQ</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#mailinglist">Updates</a>
+                </li>
+                <!--
+                 <li>
+                     <form action="/charge" method="POST">
+                         <script
+                                 src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                 data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                                 data-image="/img/documentation/checkout/marketplace.png"
+                                 data-name="Stripe.com"
+                                 data-description="2 widgets"
+                                 data-amount="2000"
+                                 data-locale="auto"
+                                 data-panel-label="Donate">
+                         </script>
+                     </form>
+                 </li> -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
 
     <!-- Header -->
     <header id="top" class="header">
@@ -192,24 +209,42 @@
     </section>
 
     <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
+    <section id="contact" class="services bg-primary">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
+         <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>Contact us by emailing:  thetutors@urbantutors.com</h2>
             </div>
+         </div>
         </div>
-    </aside>
+    </section>
 
     <!-- Contact Form -->
-    <div id="main">
-        <h1>Contact Form using JavaScript</h1>
-        <div id="form_sample"></div> <!-- Include JS file here -->
-        <script src="js/form.js"></script>
+    <section id="ourtutors" class="portfolio">
+    <div class="container">
+
+        <div class="row text-center">
+            <h1>The Founders</h1>
+            <div class="col-md-6" style="padding:5%;">
+                <!--<img src='img/urbantutorsmgf.png' class="img-responsive img-rounded"> -->
+                <h3>Mike Frazis</h3>
+                <h4>Mike consults for a private equity firm and is in the process of    setting up his own investment fund. He holds a Bachelors and
+                    a Master of Chemistry from Oxford and a Masters of Finance from the London School of Economics. Mike is passionate about
+                    all aspects of learning; at school he achieved a UAI of 99.7 and once came first in a National chemistry competition. When
+                    he’s not working Mike can be found in the surf at Bondi or Tamarama.
+                    </h4>
+                </div>
+                    <div class="col-md-6" style="padding:5%;">
+                <h3>Sam Waller</h3>
+                <h4>Sam has spent the last 7 years working in financial markets for various Investment Banks. He holds a Bachelor of Economics
+                    from the University of Sydney and a certificate in youth mentoring from the Northern Sydney Insitute. He is passionate about
+                    Education, Politics and Macroeconomics and outside of finance has a strong background in written English and Public Speaking.
+                    When he’s not working Sam can mostly be found surfing in summer and skiing in winter.
+                </h4>
+            </div>
+        </div>
     </div>
+</section>
 
 
     <!-- Footer -->
