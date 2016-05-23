@@ -16,6 +16,15 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+
+#back_faq{
+        background: url(../img/bg_1.jpg) repeat;
+}
+
+#back_about{
+        background: url(../img/bg_2.jpg) repeat;
+}
+
 #header{
     background-color: #337ab7;
     border-bottom: #337ab7;
